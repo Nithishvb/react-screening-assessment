@@ -1,6 +1,6 @@
 import React from "react";
 import { EmployeeType } from "../types/EmployeeType";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { columns } from "../utils/EmployeeTableColumns";
 
 type EmployeeTableProps = {
@@ -13,6 +13,9 @@ const EmployeeTable = ({ employess }: EmployeeTableProps) => {
       <DataGrid
         rows={employess}
         columns={columns}
+        components={{
+          Toolbar: GridToolbar,
+        }}
         initialState={{
           pagination: {
             paginationModel: { page: 0, pageSize: 5 },
