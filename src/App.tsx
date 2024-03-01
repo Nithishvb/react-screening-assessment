@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="p-4">
-      <div className="flex justify-center	 w-full lg:w-2/5 items-center align-center lg:m-auto py-4">
+      <div className="flex justify-center	w-full lg:w-2/5 items-center align-center lg:m-auto py-4">
         <input
           type="text"
           placeholder="Search employee by name"
